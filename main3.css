@@ -1,0 +1,90 @@
+* {
+	
+	box-sizing: border-box;
+}
+
+body {
+	
+}
+
+
+#sidebar {
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background: #151719;
+}
+
+#sidebar ul li {
+	color: white;
+	text-align: center;
+	border-bottom: 1px solid ;
+	padding: 15px 10px;
+	list-style: none;
+}
+
+.logo {
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.formulario {
+	width: 400px;
+	background: #0e1013;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+
+}
+
+.formulario h1 {
+	font.size: 22px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.controls {
+	width: 100%;
+	background: white;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 25px;
+	border: 1px solid grey;
+	font-family: 'calibri';
+	font-size: 18px;
+}
+
+
+.formulario p {
+	height: 40px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 40px;
+}
+
+
+.formulario a {
+	color: white;
+	text-decoration: none;
+
+}
+
+.formulario a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+.formulario .botons {
+	width: 100%;
+	background: blue;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 30px 0;
+	font-size: 16px;
+}
