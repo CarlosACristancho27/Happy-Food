@@ -4,7 +4,7 @@
 }
 
 body {
-	
+	  background: linear-gradient(45deg, #83808070, #8079801c);
 }
 
 
@@ -35,7 +35,8 @@ body {
 	padding: 30px;
 	margin: auto;
 	margin-top: 100px;
-	border-radius: 4px;
+	margin-bottom: 60px;
+	border-radius: 30px;
 	font-family: 'calibri';
 	color: white;
 	box-shadow: 7px 13px 37px #000;
@@ -80,11 +81,21 @@ body {
 }
 
 .formulario .botons {
-	width: 100%;
+	width: auto;
 	background: blue;
 	border: none;
-	padding: 12px;
+	padding: 10px 30px;
 	color: white;
-	margin: 30px 0;
+	margin: 20px 15px;
 	font-size: 16px;
+}
+
+footer {
+	clear: both;
+    background: #212529;
+    font-size: 12px;
+    color: whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
 }
