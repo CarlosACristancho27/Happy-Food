@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-sca">
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="icon" href="./img/Happy-Food-logo.png">
+	<link rel="icon" href="./img/HF-logo-corto.png">
 	<title>Sistema de Registro de Usuario (Prototipo)</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
 	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
   
   <a class="navbar-brand" href="#">
-    <img src="./img/Happy-Food-logo.png" alt="logo" style="width: 50px;">
+    <img src="./img/HF-logo-corto.png" alt="logo" style="width: 50px;">
   </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,8 @@
 
     <div class="navbar-nav">
   
-    <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
-      </div>
+    <a class="nav-item nav-link active" href="index0.html">Inicio <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Perfil</a>
   </div>  
 </nav>
 <br>
@@ -51,33 +49,92 @@
 		<br>
 
 		<h1>Registro de usuario.</h1>
-		<form action="enviar.php" method="post">
-		<input class="controls" type="text" name="name" required id="Nombres" placeholder="Ingrese su nombre.">
 
-		<input class="controls" type="text" name="second_name" required id="Apellidos" placeholder="Ingrese su apellido.">
+		<form>
 
-		<input class="controls" type="text" name="ID" required id="CI" placeholder="Ingrese su Cedula de Identidad.">
+		<div class="row">
 
-		<input class="controls" type="text" name="tel" required id="Numero" placeholder="Ingrese tu Numero de Telefono">
+		 	<div class="col">
+		      <label>Nombre: </label>
+		      <input type="text" placeholder="Tu nombre">
+			</div>
 
-		<input class="controls" type="email" name="email" required id="Correo" placeholder="Ingrese su Correo Electronico.">
+		    <div class="col">
+		      <label>Apellido: </label>
+		      <input type="text" placeholder=" Tu apellido">
+		    </div>
 
-		<input class="controls" type="email" name="email" required id="Correo" placeholder="Confirmacion de tu Correo Electronico.">
+		</div>
 
-		<input class="controls" type="password" name="password" required id="Contraseña" placeholder="Ingrese su Contraseña">
+		<div class="row">
 
-		<input class="controls" type="password" name="password" required id="Contraseña" placeholder="Confirmacion de su Contraseña">
+			<div class="col">
+			<label>Su cedula: </label>
+			<input type="text" placeholder="Su Cedula de Identidad.">
+			</div>
+
+			<div class="col">
+			<label>Su Telefono: </label>
+			<input type="text" placeholder="Su Telefono">
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col">
+			<label>Email: </label>
+			<input type="email" name="email"  placeholder="Su email.">
+			</div>
+
+			<div class="col">
+			<label>Confirme su Email: </label>
+			<input type="email" name="email" placeholder="Confirme su email.">
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col">
+			<label>Contraseña: </label>
+			<input type="password" name="password" placeholder="Su Contraseña">
+			</div>
+
+			<div class="col">
+			<label>Confirme su Contraseña: </label>
+			<input type="password" name="password" placeholder="Confirme su Contraseña">
+			</div>
+
+		</div>
+
 		
-		<label><input type="checkbox" id="cbox1" value="first"> He leido y acepto los <a href="Terminos-y-Condiciones.txt">Terminos y Condiciones</a></label>
+		<label>
+			<input type="checkbox" id="cbox1" value="first"> He leido y acepto los <a href="Terminos-y-Condiciones.txt">Terminos y Condiciones</a>
+		</label>
 
+		<div>
+
+		<center>
 		<input class="botons" type="submit" value="Registrarse"><a href="#"></a>
+		</div>
+		</center>
 
 		<p><a href="index2.html">¿Ya tienes una cuenta? Inicia sesion.</a></p>
 
 		<p><a href="index3.html">¿Has olvidado tu contraseña?</a></p>
+		
+		
+	</div>
+
+	</form>
 
 	</section>
 
+
+	<footer>
+      		<span>Happy Food C.A - © 2022</span>
+  		</footer>
 
 </body>
 </html>
