@@ -14,7 +14,7 @@ body {
 }
 
 .formulario {
-	width: 40%;
+	width: 550px;
 	background: #0e1013;
 	padding: 30px;
 	margin: auto;
@@ -87,6 +87,6 @@ footer {
 
 @media (max-width: 500px) {
 	.formulario {
-		width: 60%; 
+		width: 500px; 
 	}
 }
