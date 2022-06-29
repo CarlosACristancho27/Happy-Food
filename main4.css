@@ -93,10 +93,10 @@ footer {
 
 @media (max-width: 500px) {
     .formulario {
-       width: 75%;
+       width: 95%;
     }
 
     .formulario .botons {
-        width: 50%;
+        width: 60%;
     }
 }
