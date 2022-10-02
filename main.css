@@ -1,6 +1,5 @@
 * {
 	box-sizing: border-box;
-    margin: 0;
     padding: 0;
  }
 
@@ -12,13 +11,12 @@ body {
 	text-align: center;	
 }
 
-.opcion {
-	padding: 10px;
-	white-space: pre-line;
+.options {
+    margin: 5%;	
 }
 
 
-.pie {
+footer {
     clear: both;
 	background: #212529;
     font-size: 12px;
@@ -27,3 +25,10 @@ body {
     text-align: center;
     padding-bottom: 20px;
 }
+
+@media (max-width: 700px) {
+    .options {
+        padding: 15px;
+        white-space: pre-line;
+    }
+ }   
