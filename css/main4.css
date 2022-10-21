@@ -14,7 +14,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #111111d1;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -73,11 +73,19 @@ footer {
     background: #212529;
     font-size: 12px;
     color: whitesmoke;
-    padding: 20px 0;
+    padding: 20px 10px 20px;
     text-align: center;
     padding-bottom: 20px;
 }
 
-@media (max-width: 500px) {
-    
+@media (max-width: 900px) {
+      
+     #navbar {
+      width: 180%;
+     } 
+
+     .sidenav {
+      background: #111111d1;
+     } 
+
 }
