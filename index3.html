@@ -10,35 +10,37 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-	<link rel="stylesheet" type="text/css" href="main3.css">
+	<link rel="stylesheet" type="text/css" href="./css/main3.css">
 	<link rel="icon" href="./img/logo.png">
 	<title>Recuperacion de Datos de usuario (Prototipo)</title>
 </head>
 <body>
 
 	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+  	<div id="mySidenav" class="sidenav">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   
-  <a class="navbar-brand" href="#">
+  	<a class="navbar-brand" href="index.html">
     <img src="./img/logo.png" alt="logo" style="width: 50px;">
-  </a>
+	  </a>
+	  <a href="index.html">Inicio</a>
+	  <a href="menu.html">Ver Menú</a>
+	  <a href="index2">Iniciar Sesion</a>
+	</div>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	<span style="font-size:30px;cursor:pointer;color:white;margin-left: 13px;" onclick="openNav()">&#9776;</span>
 
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-    <div class="navbar-nav">
-  
-    <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-      </div>
-  </div>  
-</nav>
-<br>
+	    <div class="navbar-nav">
+	      
+	  	</div>  
+	</nav>
+	<br>
 
 	<section class="formulario">
 		<center>
@@ -49,8 +51,6 @@
 		<h1>Recupera tu Contraseña.</h1>
 
 		<input class="controls" type="email" name="email" required placeholder="Ingrese su Correo Electronico.">
-		
-		<p><a href="#">¿Has olvidado tu nombre de usuario?.</a></p>
 
 		<center>
 		<input class="botons" type="submit" value="Enviar"><a href="#"></a>
@@ -60,9 +60,25 @@
 
 	</section>
 
-	<footer>
-      		<span>Happy Food C.A - © 2022</span>
-  		</footer>
+
+  	<script>
+      window.sr = ScrollReveal();
+    sr.reveal('.formulario', {
+      duration: 2000,
+      origin: 'top',
+      distance: '300px'
+    });
+	</script>
+
+	<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
 
 
 </body>
