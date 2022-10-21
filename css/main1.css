@@ -14,7 +14,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #111111d1;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -97,6 +97,10 @@ body {
 	font-size: 16px;
 }
 
+.row {
+	text-align: center;
+}
+
 .col {
 	padding: 10px;
 	margin-bottom: 25px;
@@ -109,17 +113,8 @@ body {
 	margin: 12px;
 }
 
-footer {
-	clear: both;
-    background: #212529;
-    font-size: 12px;
-    color: whitesmoke;
-    padding: 20px 0;
-    text-align: center;
-    padding-bottom: 20px;
-}
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 900px) {
 
 	.sidenav {
 		background-color: #111111d1;
@@ -128,4 +123,5 @@ footer {
 	.formulario {
 		width: 500px; 
 	}
+
 }
