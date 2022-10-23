@@ -51,6 +51,7 @@ body {
 
 
 .formulario {
+    text-align-last: center;
     background: #212529;
     box-shadow: 7px 13px 37px #000;
     color: white;
@@ -59,7 +60,16 @@ body {
 }
 
 .form-group {
-    margin: 5%;
+  padding: 15px;   
+}
+
+.input-group {
+    position: initial;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 100%;
+    padding: 8px;
 }
 
 table {
@@ -88,4 +98,15 @@ footer {
       background: #111111d1;
      } 
 
+     .formulario {
+      margin-bottom: 20px;
+     }
+
+     table {
+
+     }
+
+     .btn-secondary{
+                margin: 7px;
+      }
 }
